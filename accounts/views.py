@@ -7,11 +7,11 @@ def home(request):
 
 
 def products(request):
-    return HttpResponse('Products page')
+    return render(request, 'accounts/product.html')
 
 
 def customers(request):
-    return HttpResponse('Customers page')
+    return render(request, 'accounts/customer.html')
 
 # urlpatterns = [
 #     path('admin/', admin.site.urls),
