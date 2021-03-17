@@ -27,7 +27,7 @@ class Product(models.Model):
     name = models.CharField("Product Name ", max_length=200, null=True)
     price = models.FloatField("Price", null=True)
     category = models.CharField("Category ", max_length=30, null=True, choices=CATEGORY)
-    description = models.CharField("Description ", max_length=250, null=True, blank=True)
+    description = models.CharField("Description ", max_length=250, null=True, blank=True )
     date_created = models.DateTimeField(auto_now_add=True, null=True)
     tags = models.ManyToManyField(Tag)
 
